@@ -251,7 +251,6 @@
                             respondStatus : item.respondStatus,
                         };
                     });
-                    console.log(this.txList,2222);
                     this.txPageNum = Number(res.pageNum);
                     this.txPageSize = Number(res.pageSize);
                 } catch (e) {
