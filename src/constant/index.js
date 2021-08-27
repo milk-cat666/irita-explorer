@@ -118,31 +118,32 @@ export const TX_TYPE = {
   request_rand: 'request_rand',
 }
 
+// todo duanjie 临时更改
 // 展示
 export const TX_TYPE_DISPLAY = {
   // service
-  define_service: 'Define Service',
-  bind_service: 'Bind Service',
-  call_service: 'Call Service',
-  respond_service: 'Respond Service',
-  update_service_binding: 'Update Service Binding',
-  disable_service_binding: 'Disable Service Binding',
-  enable_service_binding: 'Enable Service Binding',
-  refund_service_deposit: 'Refund Service Deposit',
-  pause_request_context: 'Pause Request Context',
-  start_request_context: 'Start Request Context',
-  kill_request_context: 'Kill Request Context',
-  update_request_context: 'Update Request Context',
+  define_service: '服务定义',
+  bind_service: '服务绑定',
+  call_service: '服务请求',
+  respond_service: '服务响应',
+  update_service_binding: '更新服务绑定',
+  disable_service_binding: '禁用服务绑定',
+  enable_service_binding: '允许服务绑定',
+  refund_service_deposit: '退还服务押金',
+  pause_request_context: '暂停请求上下文',
+  start_request_context: '启动请求上下文',
+  kill_request_context: '中止请求上下文',
+  update_request_context: '更新请求上下文',
   'service/set_withdraw_address': 'Service Set Withdraw Address',
   withdraw_earned_fees: 'Withdraw Earned Fees',
    // Record
-   create_record: 'Create Record',
+   create_record: '创建存证',
   // nft
-  burn_nft: 'NFT Burn',
-  transfer_nft: 'NFT Transfer',
-  edit_nft: 'NFT Edit',
-  issue_denom: 'Issue Denom',
-  mint_nft: 'NFT Mint',
+  burn_nft: '销毁数据对象',
+  transfer_nft: '转移数据对象',
+  edit_nft: '编辑数据对象',
+  issue_denom: '定义数据对象类型',
+  mint_nft: '创建数据对象',
   // Token
   issue_token: 'Issue Token',
   edit_token: 'Edit Token',
@@ -150,7 +151,7 @@ export const TX_TYPE_DISPLAY = {
   transfer_token_owner: 'Transfer Token Owner',
   burn_token: 'Burn Token',
   //Bank
-  send: 'Transfer',
+  send: '转移',
   multisend: 'Multi Send',
   //Crisis
   verify_invariant: 'VerifyInvariant',
@@ -192,12 +193,12 @@ export const TX_TYPE_DISPLAY = {
   pause_feed: 'Pause Feed',
   edit_feed: 'Edit Feed',
   // CrossChain 联盟链
-  recv_packet: 'IBC Transfer In',     //和公有链ibc交易类型名称一致
-  create_client: 'IBC Create Client', //和公有链ibc交易类型名称一致
-  update_client: 'IBC Update Client', //和公有链ibc交易类型名称一致
+  recv_packet: '跨链验证',     //和公有链ibc交易类型名称一致
+  create_client: '创建跨链连接', //和公有链ibc交易类型名称一致
+  update_client: '更新跨链证明', //和公有链ibc交易类型名称一致
   // Identity
-  create_identity: 'CreateIdentity',
-  update_identity: 'UpdateIdentity',
+  create_identity: '创建全局身份',
+  update_identity: '更新全局身份',
   // IBC
   transfer: 'IBC Transfer Out',
   timeout_packet: 'IBC Timeout Packet',
@@ -225,22 +226,23 @@ export const TX_TYPE_DISPLAY = {
   request_rand: 'Request Rand',
 }
 
+//todo duanjie  一级菜单，临时更改
 export const LEVEL_TX_TYPE = {
-  Transfer: 'Transfer',
+  Transfer: '转移',
   Staking: 'Staking',
-  iService: 'iService',
-  NFT: 'NFT',
+  iService: '服务',
+  NFT: '数据对象',
   Coinswap: 'Coinswap',
-  Identity: 'Identity',
+  Identity: '全局身份',
   IBC: 'IBC',
   HTLC: 'Hash Lock',
   Oracle: 'Oracle',
   Random: 'Random',
-  Record: 'Record',
+  Record: '存证',
   Asset: 'Asset',
   Gov: 'Gov',
   Other: 'Others',
-  crossChain: 'CrossChain'
+  crossChain: '跨链'
 }
 
 export const TX_STATUS = {
