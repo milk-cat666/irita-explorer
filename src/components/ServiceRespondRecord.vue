@@ -159,7 +159,7 @@
         getServiceRespondInfo,
         getServiceBindingByServiceName,
     } from "../service/api";
-    import { TX_STATUS,ColumnMinWidth } from '../constant';
+    import { TX_STATUS,ColumnMinWidth,TX_TYPE_DISPLAY } from '../constant';
     import { converCoin } from '../helper/IritaHelper';
     import productionConfig from '@/productionConfig.js';
     export default {
@@ -241,7 +241,7 @@
                     );
                     this.txList = res.data.map((item) =>{
                         return {
-                            type : item.type,
+                            type : TX_TYPE_DISPLAY[item.type],
                             respondHash : item.respondHash,
                             requestContextId : item.requestContextId,
                             height : item.height,
@@ -251,6 +251,7 @@
                             respondStatus : item.respondStatus,
                         };
                     });
+                    console.log(this.txList,2222);
                     this.txPageNum = Number(res.pageNum);
                     this.txPageSize = Number(res.pageSize);
                 } catch (e) {
